@@ -15,6 +15,10 @@ public class Randomizer : MonoBehaviour
 
     private Rect start;
     private float CurrentX, CurrentY;
+
+    /// <summary>
+    /// Aligns and rotates all the objects
+    /// </summary>
     private void Align()
     {
         int current = 0;
@@ -41,6 +45,9 @@ public class Randomizer : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// start, initialization of the game
+    /// </summary>
     void Start()
     {
         CurrentX = 0;
@@ -55,7 +62,9 @@ public class Randomizer : MonoBehaviour
         Align();
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// checks if all the objects are rotated at their original rotation
+    /// </summary>
     void Update()
     {
         int correct = 0;
